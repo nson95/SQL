@@ -14,4 +14,7 @@ SELECT max(listprice)
   FROM product;
 
 SELECT COUNT(*) FROM product
- WHERE listprice =57.50
+ WHERE listprice =57.50;
+ 
+SELECT pdt.productid, pdt.code, pdt.description, pdt.listprice 
+  FROM product as pdt;
