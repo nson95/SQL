@@ -43,5 +43,11 @@ WHERE accountid = 105;
 
 SELECT account_holder, balance, fees, amount, txn_type
   FROM accounts accts
-INNER JOIN transactions t
+INNER JOIN transactions t     -- shows only what is in common
     on accts.accountid = t.account_id;
+    
+    
+SELECT account_holder, balance, fees, amount, txn_type
+  FROM accounts accts
+LEFT OUTER JOIN transactions
+    on accts.accountid = account_id;
