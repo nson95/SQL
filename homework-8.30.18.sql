@@ -1,7 +1,7 @@
 SELECT *
   FROM invoice i, lineitem li, product p
- where i.id = li.id and p.id =
- li.id;
+ where i.id = li.invoiceid 
+   and p.id = li.productid;
  
  
  SELECT i.id, i.OrderNumber, i.OrderDate, i.total, li.id, li.InvoiceID, li.ProductID,
