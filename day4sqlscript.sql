@@ -22,3 +22,4 @@ SELECT * FROM accounts
 SELECT DISTINCT balance
 		   FROM accounts;
  
+ 
