@@ -146,6 +146,9 @@ INSERT INTO `product` (`ID`,`VendorID`,`PartNumber`,`Name`,`Price`,`Unit`,`Photo
 
 INSERT INTO `product` (`ID`,`VendorID`,`PartNumber`,`Name`,`Price`,`Unit`,`PhotoPath`) VALUES (13,5,'279364','Lenovo IdeaCentre All-In-One Desktop',349.99,'','/images/LenovoIdeaCenter.jpg');
 
+
+ALTER TABLE user
+ADD UNIQUE (Email); -- makes user.Email a unique restraint
 -- GRANT SELECT, INSERT, DELETE, UPDATE
 -- ON mma.*
 -- TO mma_user@localhost
