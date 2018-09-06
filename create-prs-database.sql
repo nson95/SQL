@@ -149,6 +149,9 @@ INSERT INTO `product` (`ID`,`VendorID`,`PartNumber`,`Name`,`Price`,`Unit`,`Photo
 
 ALTER TABLE user
 ADD UNIQUE (Email); -- makes user.Email a unique restraint
+
+CREATE USER prs_user@localhost IDENTIFIED BY 'sesame';
+GRANT SELECT, INSERT, DELETE, UPDATE ON prs.* TO prs_user@localhost;
 -- GRANT SELECT, INSERT, DELETE, UPDATE
 -- ON mma.*
 -- TO mma_user@localhost
